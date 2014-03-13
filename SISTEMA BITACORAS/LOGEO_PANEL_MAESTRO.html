@@ -1,0 +1,156 @@
+<!-- INICIO DE LA PAGINA DE INICIO 
+    @dered170
+    @netLPN
+-->
+
+<!-- El tipo de documento es html5 -->
+<!DOCTYPE html>
+<!-- Inicio del documento html e indicamos el idioma español de México -->
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estiloindex.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js">
+    </script>
+
+</head>
+<body>
+    <div id="topmenu">
+    </div>
+
+    <div  id="hrhome" >
+        <img src="imagenes/tescologo.jpg">
+    </div>
+
+    <h1>HOME</h1>
+
+    <section id="menu">
+        <article id="contenedorvideo">  
+            <a href="#video">
+
+                <span>
+                    <div id="contentvideo">     
+                    </div>
+                </span>
+                <div>
+                        <h2>¿Como utilizarlo?</h2>
+                        <h3>Fácil y Rápido</h3>
+                </div>
+            </a>   
+        </article>
+         <article id="contenedoris">
+            <a href="#sesion">
+                <span>
+                    <div class="font">U </div>
+                </span>
+                <div>
+                        <h2>inicie sesion</h2>
+                        <h3>Fácil y Rápido</h3>
+                </div>
+            </a>            
+        </article>
+         <article id="contenedorreg">
+            <a href="REGISTRO_MAESTRO.html">
+
+                <span>
+                    <div class="font">Q </div>
+                </span>
+                <div>
+                        <h2>Registrate</h2>
+                        <h3>Fácil y Rápido</h3>
+                </div>
+                </a>
+            
+        </article>
+    </section>
+    <section id="video"> 
+        <video controls>
+          <source src="video/guiarapida.webm" type='video/webm; codecs="vp8, vorbis"' />
+          <source src="video/guiarapida.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          Video tag not supported. Download the video <a href="video/guiarapida.webm">here</a>.
+        <video>
+    </section>
+    <section id="sesion">
+        <p>inicio de sesión</p>
+        <form action="mostrar.php" method="POST">
+            <input type="text" id="" placeholder="Matricula" name="nick" required />
+            <input type="password" id="" placeholder="AAAA-MM-DD" name="contrasena" required />
+            <input type="submit" id="" value="iniciar" />
+        </form>
+    </section>
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+    $("#hrhome").hide("slow");
+    $("#menu").show();
+    $("#video").hide();
+    $("#sesion").hide();
+
+    $("#hrhome").click(function(){
+        $("h1").css({display:"block",height: "130px"});
+        $("#menu").show("slow");
+        $("#video").hide("slow");
+        $("#sesion").hide("slow");
+        $("#hrhome").hide("slow");
+
+    });
+    $("#contenedorvideo").click(function(){
+        $("h1").css({ display: "none"});
+        $("#menu").hide("slow");
+        $("#video").show("slow");
+         $("#sesion").hide("slow");
+        $("#hrhome").show("slow");
+
+    });
+    $("#contenedoris").click(function(){
+        $("h1").css({ display: "none"});
+        $("#menu").hide("slow");
+        $("#video").hide("slow");
+         $("#sesion").show("slow");
+        $("#hrhome").show("slow");
+
+    });
+});
+ 
+//======================================
+//script para subir y bajar con el boton
+//======================================
+//         $(function(){
+//     //clic en un enlace de la lista
+//     $('#menu article a').on('click',function(e){
+//         //prevenir en comportamiento predeterminado del enlace
+//         e.preventDefault();
+//         //obtenemos el id del elemento en el que debemos posicionarnos
+//         var strAncla=$(this).attr('href');
+//          
+//         //utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
+//         $('body,html').stop(true,true).animate({
+//             //realizamos la animacion hacia el ancla
+//             scrollTop: $(strAncla).offset().top
+//         },1200);
+//     });
+
+//     $('#hrhome').on('click',function(e){
+//         //prevenir en comportamiento predeterminado del enlace
+//         e.preventDefault();
+//         //obtenemos el id del elemento en el que debemos posicionarnos
+//         var strAncla=$(this).attr('href');
+//          
+//         //utilizamos body y html, ya que dependiendo del navegador uno u otro no funciona
+//         $('body,html').stop(true,true).animate({
+//             //realizamos la animacion hacia el ancla
+//             scrollTop: $(strAncla).offset().top
+//         },1200);
+//     });
+
+// });
+
+      
+
+</script>
+
+</body>
+    
+</html>

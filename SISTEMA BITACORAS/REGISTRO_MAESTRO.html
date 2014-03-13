@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registrate</title>
+    <link rel="stylesheet" href="css/estiloregistromaestro.css">
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $( "#idnombre" ).focus(function() {
+                $("#idnombre").css("background","#ffffff");
+            });
+            $( "#idap" ).focus(function() {
+                $("#idap").css("background","#ffffff");
+            });
+            $( "#idam" ).focus(function() {
+                $("#idam").css("background","#ffffff");
+            });
+            $( "#idmat" ).focus(function() {
+                $("#idmat").css("background","#ffffff");
+            });
+            $( "#idnac" ).focus(function() {
+                $("#idnac").css("background","#ffffff");
+            });
+            $( "#idesp" ).focus(function() {
+                $("#idesp").css("background","#ffffff");
+            });
+
+            $("#Benviar").click(function(){
+                $("#iderror_nom").fadeOut();
+                $("#iderror_ap").fadeOut();
+                $("#iderror_am").fadeOut();
+                $("#iderror_mat").fadeOut();
+                $("#iderror_mat_digito").fadeOut();
+                $("#iderror_edad").fadeOut();
+                var nombre = $("#idnombre").val()
+                var a_paterno = $("#idap").val()
+                var a_materno =$("#idam").val()
+                var matricula =$("#idmat").val()
+                var nacimiento =$("#idnac").val()
+                var especialidad =$("#idesp").val()
+
+                if (nombre == ""){
+
+                    $("#iderror_nom").fadeIn();
+                    $("#idnombre").css("background","#FFF url(imagenes/submit-error.png)");
+                    $("#idnombre").css("backgroundRepeat","no-repeat");
+                    $("#idnombre").css("backgroundPosition","95% 50%");
+                    return false;
+                }else{
+                    $("#iderror_nom").fadeOut();
+
+                    if(a_paterno == ""){
+                        $("#iderror_ap").fadeIn();
+                        $("#idap").css("background","#FFF url(imagenes/submit-error.png)");
+                        $("#idap").css("backgroundRepeat","no-repeat");
+                        $("#idap").css("backgroundPosition","95% 50%");
+                        return false;
+                    }else{
+                        $("#iderror_ap").fadeOut();
+                       
+                        if(a_materno == ""){
+                            $("#iderror_am").fadeIn();
+                            $("#idam").css("background","#FFF url(imagenes/submit-error.png)");
+                            $("#idam").css("backgroundRepeat","no-repeat");
+                            $("#idam").css("backgroundPosition","95% 50%");
+                            return false;
+                        }else{
+                            $("#iderror_am").fadeOut();        
+                            
+                            if(matricula == ""){
+                                $("#iderror_mat").fadeIn();
+                                $("#idmat").css("background","#FFF url(imagenes/submit-error.png)");
+                                $("#idmat").css("backgroundRepeat","no-repeat");
+                                $("#idmat").css("backgroundPosition","95% 50%");
+                                return false;
+                            }else{
+                                $("#iderror_mat").fadeOut();
+
+                                if(!(matricula.match(/^\d{4}$/))){
+                                    $("#iderror_mat_digito").fadeIn();
+                                    $("#idmat").css("background","#FFF url(imagenes/submit-error.png)");
+                                    $("#idmat").css("backgroundRepeat","no-repeat");
+                                    $("#idmat").css("backgroundPosition","95% 50%");
+                                    return false;
+                                }else{
+                                    $("#iderror_mat_digito").fadeOut();
+                                    
+                                    if(nacimiento == ""){
+                                        $("#iderror_edad").fadeIn();
+                                        $("#idnac").css("background","#FFF url(imagenes/submit-error.png)");
+                                        $("#idnac").css("backgroundRepeat","no-repeat");
+                                        $("#idnac").css("backgroundPosition","80% 50%");
+                                        return false;
+                                    }else{
+                                        $("#iderror_edad").fadeOut();
+                                        
+                                        if(especialidad == ""){
+                                            $("#iderror_esp").fadeIn();
+                                            $("#idesp").css("background","#FFF url(imagenes/submit-error.png)");
+                                            $("#idesp").css("backgroundRepeat","no-repeat");
+                                            $("#idesp").css("backgroundPosition","95% 50%");
+                                            return false;
+                                        }else{
+                                            $("#iderror_esp").fadeOut();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <a  id="hrhome" href="../index.html">
+        <img src="../img/tescologo.jpg">
+    </a>
+    <header>
+
+        <h1>"Registro" del <strong>Maestro</strong>
+        </h1>
+        <div id="logo">
+        </div>
+    </header>
+    <section id="registro">
+            <form method="POST" action="ALTA_MATERIAS.php">
+                <div id="datos">
+
+                <div class="cover">
+                    <div id="iderror_nom" class="error">Rellene los Campos</div>
+                    <input class="cajastexto" type="text" id="idnombre" placeholder="Nombre" name="nombre" onchange="limpiar(idnombre)" />
+                                            
+                </div>
+                <div class="cover">
+                        <div id="iderror_ap" class="error">Rellene los Campos</div>
+                    <input class="cajastexto" type="text" id="idap" placeholder="Apellido paterno" name="ap"/>
+                </div>
+                <div class="cover">
+                        <div id="iderror_am" class="error">Rellene los Campos</div>
+                    <input class="cajastexto" type="text" id="idam" placeholder="Apellido materno" name="am"/>
+                </div>
+                <div class="cover">
+                        <div id="iderror_mat" class="error">Inserte su Matricula</div>
+                        <div id="iderror_mat_digito" class="error">Debe contener maximo 4 numeros</div>
+                    <input class="cajastexto" type="text" id="idmat" placeholder="Numero de empleado" name="num_control"/>
+                </div>
+                <div class="cover">
+                        <div id="iderror_edad" class="error">Falta su Edad</div>
+                    <input class="cajastexto" type="date" id="idnac" placeholder="Nacimiento" name="nacimiento" />
+                </div>
+                <div class="cover">
+                        <div id="iderror_esp" class="error">Falta su Especialidad</div>
+                    <input class="cajastexto" type="text" id="idesp" placeholder="Especialidad" name="especialidad"/>
+                </div>
+                <div class="cover">
+                    <select class="cajastexto" name="jefatura" id="iddiv">
+                        <option value="IngMecatrónica">Ing. Mecatrónica</option>
+                        <option value="Ing. Ambiental">Ing. Ambiental</option>
+                        <option value="Ing. Electromecánica">Ing. Electromecánica</option>
+                        <option value="Ing. Informática y ITIC">Ing. Informática y ITIC</option>
+                        <option value="Ing. Industrial">Ing. Industrial</option>
+                        <option value="Aministración y Gestión Empresarial">Aministración y Gestión Empresarial</option>
+                        <option value="Ing. en Sistemas Computacionales">Ing. en Sistemas Computacionales</option>
+                        <option value="Ing. en Materiales">Ing. en Materiales</option>
+                    </select>
+                </div>
+                </div>
+                <div id="btnregistrar">
+                    <input type="submit" id="Benviar" value="registrame" />
+                </div>
+            </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+}
+body{
+	background: #3c4043 url(../imagenes/bgnoisy.png);
+	background-repeat: repeat;
+	padding: 0;
+	margin: 0;
+}
+nav{
+	background: #3c4043;
+	margin: 0 auto 0px;
+	width: 100%;
+	padding: 0;
+	max-width: 600px;
+	display:block;
+	height: 40px;
+	text-align: center;
+}
+nav ul{
+	padding: 0;
+	background: none;
+}
+nav ul li{
+	padding: 0px 10px;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	text-align: center;
+		transition: all linear .3s;
+		-webkit-transition: all linear .3s;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		line-height: 40px;
+}
+nav ul li:nth-child(2){
+	background: white !important;
+	cursor: pointer !important;
+	box-shadow: 0px 3px 10px 7px rgba(0,0,0,0.8) !important;
+	color: #000 !important;
+}
+nav ul li:nth-child(2) a{
+	color: black;
+	text-transform: uppercase;
+}
+
+nav ul li:hover{
+	background: white;
+	cursor: pointer;
+	box-shadow: 0px 3px 10px 7px rgba(0,0,0,0.8);
+	color: black;
+}
+nav ul li:hover a{
+	color: black;
+	text-transform: uppercase;
+}
+nav ul li a{
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+		line-height: 40px;																																							
+	font-family: sans-serif, helvetica;
+}
+#contentgeneral{
+	background: white;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+h1{
+	color: black;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px  auto;
+	text-align: center;
+	font-family: sans-serif, helvetica;
+	text-transform: uppercase;
+	background: whitesmoke;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+section#contenedor{
+	background: white;
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+	width: 100%;
+	text-align: center;
+	border-radius: 10px;
+}
+section#contenedor form input[type="text"],[type="email"],[type="password"]{
+	width: 250px;
+	height: 25px;
+	border-radius: 10px;
+	outline: 0;
+	border: 1px solid rgba(0,0,0,0.4);
+	padding: 0px 5px;
+	margin: 10px 10px;
+}
+section#contenedor form input[type="submit"]{
+	width: 150px !important;
+	height: 35px !important;
+	border-radius: 1px !important;
+	font-size: 16px !important;
+	margin: 10px auto;
+	text-align: center;
+	background: #ffaf31;
+	border: none;
+	box-shadow: 1px 0px 1px rgba(0,0,0,0.7),0px 1px 1px rgba(0,0,0,0.7),2px 1px 1px rgba(0,0,0,0.7),1px 2px 1px rgba(0,0,0,0.7),3px 2px 1px rgba(0,0,0,0.7),2px 3px 1px rgba(0,0,0,0.7),4px 3px 1px rgba(0,0,0,0.7),3px 4px 1px rgba(0,0,0,0.7),5px 4px 1px rgba(0,0,0,0.7),4px 5px 1px rgba(0,0,0,0.7),6px 5px 1px rgba(0,0,0,0.7);
+	color: #8e5600;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+section#contenedor form input[type="submit"]:active{
+	border: 3px solid transparent;
+	height: 32px !important;
+	margin: 13px 0px 0px auto: ;																	
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.7),2px 2px 1px rgba(0,0,0,0.7),3px 2px 1px rgba(0,0,0,0.7),4px 3px 1px rgba(0,0,0,0.7);
+}

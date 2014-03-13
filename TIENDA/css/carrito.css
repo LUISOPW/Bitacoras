@@ -1,0 +1,328 @@
+@font-face{
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+*{
+	margin: 0;
+		font-family: opensans;
+
+}
+	body{
+	background: #E5E5E5;
+	background-repeat: repeat;
+	padding: 0;
+	margin: 0;
+}
+.carrito{
+	background: rgb(169, 236, 138);
+	box-shadow: 2px 2px 5px gray;
+	width:60px;
+	top: 0;
+	position: fixed;
+	right: 0
+}
+#carro img,a{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	text-decoration: none;
+	font-family: opensans, sans-serif, helvetica;
+}
+#carro{
+	vertical-align: middle !important;
+}
+.users{
+	background: rgb(13, 179, 231);
+	top: 0;
+	position: fixed;
+	right:60px;
+	padding: 0px 0 0 10px;
+	border-radius: 0px 0px 5px 5px;
+	
+}
+.users a{
+	text-decoration: none;
+	font-family: opensans, sans-serif;
+	display: inline-block;
+	color: whitesmoke;
+	padding: 5px 5px 5px 10px;
+	background: #444;
+}
+.users p{
+	text-decoration: none;
+	font-family: opensans, sans-serif;
+	display: inline-block;
+	padding: 5px 0 0 5px;
+
+}
+nav{
+	text-align: center;
+	width: 100%;
+	max-width: 1000px;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+}
+nav ul{
+	text-align: center;
+	padding: 0;
+	display: block;
+	height: 40px;	
+	font-size: 0;
+}
+nav ul li{
+	background: rgb(22, 24, 26);
+	display: inline-block;
+	zoom: 1;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	-o-transition: .2s background;
+	-ms-transition: .2s background;
+	-moz-transition: .2s background;
+	-webkit-transition: .2s background;
+	transition: .2s background;
+	vertical-align: top;
+	z-index: 5;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin: 0;
+	width: 14%;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	box-shadow: 8px 0 25px 2px rgba(0,0,0,0.3);
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+nav ul li:hover{
+	background: #e7e5e3;
+	cursor: pointer;
+}
+nav ul li:active{
+	padding: 10px 0px 0px 0px;
+	border-bottom: none;
+	margin bottom: -5px;
+}
+nav ul li a{
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-family: sans-serif,helvetica;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding: 0;
+	max-width: 200px;
+	width: 100%;
+	font-size: 16px;
+}
+
+section#productos{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+  	box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+}
+table{
+	max-width: 1000px;
+	width: 100%;
+	background: none;
+	border-collapse : collapse;
+}
+table tr{
+	border-collapse : ;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+	margin-top: 0px;
+}
+table tr:first-child{
+	color: silver;
+	padding: 0;
+	margin: 0;s
+	}
+table tr th{
+	font-family: open-sans, sans-serif;
+	border-style:none;
+	background-color: rgb(13, 179, 231);
+	border-collapse:collapse;
+  	color:#45505C;
+  	margin: 0;
+  	box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+
+}
+table tr td{
+	font-family: open-sans, sans-serif;
+	border-style:none;
+	text-align: center;
+}
+table tr td:nth-child(2n+1){
+	font-family: open-sans, sans-serif;
+	border-style:none;
+	text-align: center;
+	  	box-shadow: 0px 6px 6px -2px rgba(0,0,0,0.3);
+
+}
+
+table tr td.imagenproducto img{
+	border-radius: 50%;
+	width: 100px;
+	height:100px;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.7);
+}
+.descripcion{
+	text-align: justify;
+	color: gray;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+.cantidad{
+	color: gray;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+.precio{
+	font-family: open-sans, sans-serif;
+	font-size: 22px;
+	color: gray;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.3);
+}
+
+h3{
+	margin: 15px 0;
+	text-align: right;
+}
+#comprar{
+	margin: 15px auto;
+	display: block;	
+	max-width: 1000px;
+	width: 100%;
+	text-align: right;
+
+}
+#comprar a{
+	border-radius: 2px;
+	width: 130px;
+	height: 35px;
+	background-color: #359ecb;
+	outline: 0;
+	border: none;
+	color: silver;
+	transition: all linear 0.4s;
+	-webkit-transition: all linear 0.4s;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 22px;
+}
+#comprar a:hover{
+	cursor: pointer;
+color: white;
+webkit-box-shadow: inset -60px 0 10px -12px #3cb4e7;
+-moz-box-shadow: inset -60px 0 10px -12px #3cb4e7;
+box-shadow: inset -60px 0 10px -12px #3cb4e7;
+}
+
+
+
+
+.social{
+	padding:5px 0px 0px 30px;
+	background:  url(../imagenes/sociales.png) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	display: block;
+	right:  0;
+	top: 100px;
+	width: 30px;
+	height: 85px;
+	position: fixed;
+	transition:all linear 0.3s;
+	-webkit-transition:all linear 0.3s;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+}
+.social:hover{
+	width: 100px;
+	background: transparent;
+	padding: 0;
+}
+.facebook{
+	width: 100%;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+	display: inline-block;
+	position: relative;
+	transition:all linear 0.2s;
+	-webkit-transition:all linear 0.2s;
+	background: #3B5998;
+}
+.facebook:hover{
+	margin-left: 10px;
+	opacity: 0.8;
+
+}
+.facebook a{
+	color: white;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	text-decoration: none;
+	font-family: opensans,sans-serif, helvetica;
+	padding-left: 5px;
+	font-size: 20px;
+	width: 100%;
+	padding: 0 3px;
+}
+/***/
+.twitter{
+	width: 100%;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+	display: inline-block;
+	position: relative;
+	transition:all linear 0.2s;
+	-webkit-transition:all linear 0.2s;
+	background: #30D8F0;
+}
+.twitter:hover{
+	margin-left: 10px;
+	opacity: 0.8;
+}
+.twitter a{
+	color: white;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	text-decoration: none;
+	font-family: opensans,sans-serif, helvetica;
+	padding-left: 5px;
+	font-size: 20px;
+	width: 100%;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.gplus{
+	width: 100%;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+	display: inline-block;
+	position: relative;
+	transition:all linear 0.2s;
+	-webkit-transition:all linear 0.2s;
+	background: #BE131B;
+}
+.gplus:hover{
+	margin-left: 10px;
+	opacity: 0.8;
+}
+.gplus a{
+	color: white;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	text-decoration: none;
+	font-family: opensans,sans-serif, helvetica;
+	padding-left: 5px;
+	font-size: 20px;
+	width: 100%;
+	padding: 0 3px;
+	cursor: pointer;
+}

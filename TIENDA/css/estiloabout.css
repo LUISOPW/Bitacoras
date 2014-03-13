@@ -1,0 +1,270 @@
+@font-face{
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+
+*{
+	margin: 0;
+}
+body{
+	background: #3c4043 url(../imagenes/fondoabout.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 170%;
+	background-size: 100% 170%;
+	padding: 0;
+	margin: 0;
+}
+.carrito{
+	background: rgb(169, 236, 138);
+	box-shadow: 2px 2px 5px gray;
+	width:60px;
+	top: 0;
+	position: fixed;
+	right: 0
+}
+#carro img,a{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	text-decoration: none;
+	font-family: opensans, sans-serif, helvetica;
+}
+#carro{
+	vertical-align: middle !important;
+}
+.users{
+	background: rgb(13, 179, 231);
+	top: 0;
+	position: fixed;
+	right:60px;
+	padding: 0px 0 0 10px;
+	border-radius: 0px 0px 5px 5px;
+	
+}
+.users a{
+	text-decoration: none;
+	font-family: opensans, sans-serif;
+	display: inline-block;
+	color: whitesmoke;
+	padding: 5px 5px 5px 10px;
+	background: #444;
+}
+.users p{
+	text-decoration: none;
+	font-family: opensans, sans-serif;
+	display: inline-block;
+	padding: 5px 0 0 5px;
+
+}	
+nav{
+	background: #3c4043;
+	margin: 0 auto 0px;
+	width: 100%;
+	padding: 0;
+	max-width: 600px;
+	display:block;
+	height: 40px;
+	text-align: center;
+}
+nav ul{
+	padding: 0;
+	background: none;
+}
+nav ul li{
+	padding: 0px 10px;
+	display: inline-block;
+	float: left;
+	width: 150px;
+	text-align: center;
+		transition: all linear .3s;
+		-webkit-transition: all linear .3s;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		line-height: 40px;
+}
+nav ul li:nth-child(3){
+	background: white !important;
+	cursor: pointer !important;
+	box-shadow: 0px 3px 10px 7px rgba(0,0,0,0.8) !important;
+	color: #000 !important;
+}
+nav ul li:nth-child(3) a{
+	color: black;
+	text-transform: uppercase;
+}
+
+nav ul li:hover{
+	background: white;
+	cursor: pointer;
+	box-shadow: 0px 3px 10px 7px rgba(0,0,0,0.8);
+	color: black;
+}
+nav ul li:hover a{
+	color: black;
+	text-transform: uppercase;
+}
+nav ul li a{
+
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+		line-height: 40px;																																							
+	font-family: opensans,sans-serif, helvetica;
+}
+#contentgeneral{
+	background: rgba(0,0,0,0.8);
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+h1{
+	color: black;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px  auto 40px;
+	text-align: center;
+	font-family: opensans,sans-serif, helvetica;
+	text-transform: uppercase;
+	background: whitesmoke;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+section#contenedor{
+	display: block;
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+	text-align: center;
+	border-radius: 10px;
+	height: 500px;
+}
+section#social, div#mision, div#vision{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	height: 500px;
+}
+#social{
+}
+#social p{
+	width: 60%;
+	margin: 0 auto;
+	background: rgb(189, 180, 160) url(../imagenes/diag-gray.gif) repeat;
+	color: rgb(77, 57, 57);
+	font-family:opensans, sans-serif, helvetica;
+	box-shadow: -3px 3px 0px silver, -6px 6px 0px gray;
+}
+#social div{
+	display:block !important;
+	width: 100%;
+}
+.facebook{
+	background-image: url(../imagenes/btnfacebook.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 63px;
+	float: left;	
+	margin-right: -11px;
+	transition: all linear .0s;
+} 
+.facebook:hover {
+background-position: 0 -64px;
+}
+.facebook a{
+	font-family: opensans, sans-serif, helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: whitesmoke;
+	line-height: 60px;
+}
+.twitter{
+	background-image: url(../imagenes/btntwitter.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 63px;
+	float: left;
+	margin-right: -11px;
+	transition: all linear .0s;
+} 
+.twitter:hover {
+background-position: 0 -64px;
+}
+.twitter a{
+	font-family: opensans, sans-serif, helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: whitesmoke;
+	line-height: 60px;
+}
+
+.youtube{
+	background-image: url(../imagenes/btnyoutube.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 63px;
+	float: left;
+	margin-right: -11px;
+	transition: all linear .0s;
+} 
+.youtube:hover {
+background-position: 0 -64px;
+}
+.youtube a{
+	font-family: opensans, sans-serif, helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: whitesmoke;
+	line-height: 60px;
+}
+.instagram{
+	background-image: url(../imagenes/btninstagram.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 63px;
+	float: left;
+	margin-right: -11px;
+	transition: all linear .0s;
+} 
+.instagram:hover {
+background-position: 0 -64px;
+}
+.instagram a{
+	font-family: opensans, sans-serif, helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: whitesmoke;
+	line-height: 60px;
+}
+#contenedor div#mision div{
+	width: 60%;
+	margin: 0 auto;
+	background: rgb(189, 180, 160) url(../img/diag-gray.gif) repeat;
+	color: rgb(77, 57, 57);
+	font-family:opensans, sans-serif, helvetica;
+	box-shadow: 0px 3px 0px  silver, 0px 6px 0px  gray;
+}
+#contenedor div#vision div{
+	width: 60%;
+	margin: 0 auto;
+	background: rgb(189, 180, 160) url(../imagenes/diag-gray.gif) repeat;
+	color: rgb(77, 57, 57);
+	font-family:opensans, sans-serif, helvetica;
+	box-shadow: 3px 3px 0px silver, 6px 6px 0px gray;
+}
+#contenedor div#mision p{
+	color:  white;
+	text-align: justify;
+	padding: 10px 12px;
+}
+#contenedor div#vision p{
+	color:  white;
+	text-align: justify;
+	padding: 10px 12px;
+}

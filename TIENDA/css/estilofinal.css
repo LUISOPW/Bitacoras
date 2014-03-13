@@ -1,0 +1,139 @@
+@font-face{
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+
+body{
+	background:  url(../imagenes/fondo.jpg);
+	padding: 0;
+	margin: 0;
+}
+*{
+	font-family: opensans,sans-serif,helvetica;
+}
+section{
+	margin:0;	
+	padding: 0;
+}
+section#contenedor{
+	background: #1881E2;
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-webkit-background-clip: padding-box;
+color: #808082;
+margin: 100px auto;
+padding: 20px;
+position: relative;
+width: 294px;
+border-radius: 5px;
+}
+.letrero{
+	color:white;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+}
+.numero{
+	background: rgb(204, 45, 45);
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	margin: 0;
+	padding: 5px 0;
+	text-align: center;
+	color: white;
+}
+.letrero2{
+	text-align: center;
+	font-size: 12px;
+	background: #495662;
+	margin: 0 auto;
+	padding: 5px 0px;
+	color: #c7cfd7;
+	font-size: 20px;
+	max-width: 500px;
+	width: 100%;
+}
+
+
+/*contacto*/
+.contacto {
+text-align: center;
+font-size: 12px;
+background: #495662;
+margin: -10px 0px 0;
+padding: 5px 0px;
+color: #c7cfd7;
+box-shadow: 0px -2px 3px 1px rgba(255,255,255,0.2);
+}
+.contacto p{
+	display: inline-block;
+	font-family: opensans, sans-serif;
+}
+
+.contacto p.facebook {
+	line-height: 45px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 59px !important;
+margin: 0;
+background: url("../imagenes/btnfacebook.png") top center no-repeat;
+background-position:0px -10px;
+-webkit-transition: all linear .2s;
+-moz-transition: all linear .2s;
+-ms-transition: all linear .2s;
+-o-transition: all linear .2s;
+transition: all linear .2s;
+}
+.contacto p.facebook:hover {
+background: url("../imagenes/btnfacebook.png") top center no-repeat;
+background-position:0px -74px;
+}
+.contacto p.twitter {
+	line-height: 45px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 59px !important;
+margin: 0;
+background: url("../imagenes/btntwitter.png") top center no-repeat;
+background-position:0px -7px;
+-webkit-transition: all linear .2s;
+-moz-transition: all linear .2s;
+-ms-transition: all linear .2s;
+-o-transition: all linear .2s;
+transition: all linear .2s;
+}
+.contacto p.twitter:hover {
+background: url("../imagenes/btntwitter.png") top center no-repeat;
+background-position:0px -74px;
+}
+.contacto p.skype {
+	line-height: 35px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 35px;
+margin: 0;
+background: url("../imagenes/skype.gif") left center no-repeat;
+}
+.contacto a {
+color: #c7cfd7;
+text-decoration: none;
+font-family: opensans, sans-serif;
+}
+.contacto p.telefono {
+line-height: 35px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 35px;
+margin: 0;
+background: url("../imagenes/telefono.gif") left center no-repeat;
+padding-right: 0;
+}

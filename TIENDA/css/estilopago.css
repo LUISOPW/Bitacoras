@@ -1,0 +1,168 @@
+@font-face{
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+
+
+body{
+	background:  url(../imagenes/fondo.jpg);
+}
+
+section{
+	margin:0;	
+	padding: 0;
+}
+section#contenedor{
+background:  #AF3333;
+-o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+box-shadow: 0 0 10px rgba(0,0,0,0.4);
+-webkit-background-clip: padding-box;
+color: #808082;
+margin: 100px auto;
+padding: 20px;
+position: relative;
+width: 294px;
+border-radius: 5px;
+}
+
+div#totalpago{
+background: #ffc33e url("../imagenes/icons.gif") 30px -141px no-repeat;
+border: 0;
+color: #87620a;
+padding: 15px 20px 15px 70px;
+font-size: 30px;
+font-weight: bold;
+margin: 0 -35px;
+border-bottom: 3px solid #bf932b;
+line-height: 20px;
+text-align: center;
+}
+#totalpago p{
+	padding: 0 0 3px 0;
+	margin:0;
+	font-family: opensans, sans-serif, helvetica;
+}
+p.letrero{
+	font-family: opensans, sans-serif, helvetica;
+	color: whitesmoke;
+	font-size: 17px;
+}
+#pago{
+	background: #323e4a;
+	border: 0;
+	color: #87620a;
+	padding: 15px 20px 15px 70px;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 40px -35px 0px -35px;
+	border-bottom: 3px solid #bf932b;
+	line-height: 20px;
+	text-align: center;
+}
+input[type="text"]{
+	background: #4a5765;
+border: 1px solid #707881;
+padding: 5px;
+padding-left: 37px;
+margin: 5px 0;
+-o-border-radius: 2px;
+-ms-border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+width: 200px;
+color: #fff;
+}
+input[type="text"]:focus{
+	background-color: #fff;
+border-color: #008fd5;	
+color: #4a5765;
+outline: 0;	
+}
+input.nombre{
+	background-image: url("../imagenes/nombre.gif");
+background-position: 11px 3px;
+background-repeat: no-repeat;
+}
+input.nombre:focus{
+	background-position: 11px -59px;
+}
+input.email {
+background-image: url("../imagenes/email.gif");
+background-position: 9px 6px;
+background-repeat: no-repeat;
+}
+input.email:focus {
+background-position: 9px -81px;
+}
+
+input.tel {
+background-image: url("../imagenes/tel.gif");
+background-position: 10px 6px;
+background-repeat: no-repeat;
+}
+input.tel:focus {
+background-position: 10px -82px;
+}
+input.numero {
+background-image: url("../imagenes/numero.gif");
+background-position: 9px 6px;
+background-repeat: no-repeat;
+}
+input.numero:focus{
+background-position: 9px -81px;
+}	
+.envio{
+	margin-top: 20px;
+	border: 0;
+	width: 120px;
+	height: 30px;
+	border-bottom: 1px solid #fff;
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+	background: #ffc33e;
+	color: #87620a;
+	outline: 0;
+}
+.contacto {
+text-align: center;
+font-size: 12px;
+background: #495662;
+margin: 10px -15px 0;
+padding: 5px 0px;
+color: #c7cfd7;
+}
+.contacto p{
+	display: inline-block;
+	font-family: opensans, sans-serif;
+	
+}
+.contacto p.skype {
+	line-height: 35px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 35px;
+margin: 0;
+background: url("../imagenes/skype.gif") left center no-repeat;
+}
+.contacto a {
+color: #c7cfd7;
+text-decoration: none;
+font-family: opensans, sans-serif;
+}
+.contacto p.telefono {
+line-height: 35px;
+display: inline-block;
+zoom: 1;
+padding: 0 15px;
+padding-left: 35px;
+margin: 0;
+background: url("../imagenes/telefono.gif") left center no-repeat;
+padding-right: 0;
+}

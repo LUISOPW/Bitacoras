@@ -1,0 +1,494 @@
+
+/*
+================ estilo de login ==============
+by 
+jorge luis camarillo cristobal
+@dered 170
+
+
+colores
+
+verde   = rgb(53,155,53);
+        = #359B35;
+gris    = rgb(221,221,221);
+        = #DDDDDD;
+blanco  = rgb(255,255,255);
+        = #FFFFFF;
+*/
+
+/*
+====importando las fuentes
+
+*/
+@font-face{
+	font-family: icons;
+	src: url('../fonts/websymbols.otf')   format('opentype');
+}
+@font-face{
+	font-family: opensans;
+	src: url('../fonts/OpenSans-Light.ttf')   format('truetype');
+}
+@font-face{
+	font-family: Windsong;
+	src:url('../fonts/Windsong.ttf') format('truetype');
+
+}
+
+/*
+=====codigo css del DOM
+*/
+
+body{
+	background:white;
+	margin: 0;
+	padding: 0;
+}
+#hrhome{
+	position: fixed;
+	right: 0;
+	z-index: 2;
+	top: 0;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#hrhome img{
+	width: 42px;
+	height: 42px;
+}
+
+
+h1{
+	color:#4EC720;
+	text-align: center;
+	width: 80px;
+	height: 130px;
+	font-size: 20px;
+	margin: 0 auto;
+	position: relative;
+	background: #fff url(../imagenes/tescologo.jpg) no-repeat center bottom;
+	display: block;
+	font-family: sans-serif;
+/*	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+	border-bottom: 2px solid gray;*/
+	box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.4);
+	transition: all linear .3s;
+	-moz-transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	border-radius: 0px 0px 5px 5px;
+}
+
+section#menu{
+	padding: 0px 0px 10px 0px;
+	max-width: 1000px;
+	width: 100%;
+	margin: 120px auto;
+	text-align: center;
+	border-radius: 25%;
+	display: block;
+	background: none;
+	border-bottom: 5px solid rgb(53,155,53);
+	z-index: 4;
+
+}
+section#menu article{
+	border-radius: 5px;
+	vertical-align: top;
+	display: inline-block;
+	width: 200px;
+	padding: 0;
+	height: 250px;
+	background: whitesmoke;
+	text-align: center;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+	margin: 0px; 
+	-webkit-box-sizing:border-box;
+}
+section#menu article:hover{
+	background: #000;
+}
+section#menu article a{
+		text-decoration: none;
+		padding: 0;
+		width: 200px;
+		height: 250px;
+		margin: 0;
+}
+
+section#menu article a div:hover{
+	padding: 20px 0px;
+}
+section#menu article a span div{
+		text-decoration: none;
+		list-style: none;
+		-webkit-transition: all 400ms linear;
+		font-family: icons,cursiva;
+		font-size: 80px;
+		color: rgb(53,155,53);
+}
+article:hover  span div{
+	overflow: hidden;
+	font-size: 120px;
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	color: white;
+}
+section#menu article a div h2{
+	font-size: 30px;
+	font-family: opensans,sans-serif,cursiva;
+	font-weight: 500;
+	-webkit-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+    -moz-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+    -ms-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+    -o-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+    transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+	color: silver;
+
+}
+section#menu article:hover a div h2{
+	font-size: 22px;
+	color: #00ccff;
+	-webkit-animation: moveFromLeftRotate 300ms ease;
+}
+section#menu article a div h3{
+	font-family:opensans,sans-serif;
+	font-size: 20px;
+	-webkit-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+     -moz-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+      -ms-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+       -o-transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+          transition: all .2s cubic-bezier(.18,.56,.73,1.83);
+	
+	color: silver;
+	text-shadow:0px 0px 2px rgba(0,0,0,0.3);
+}
+section#menu article:hover a div h3{
+	background: #359B35;
+	font-size:5px;
+	padding: 10px;
+	vertical-align: bottom;
+	height: 40px;
+	color: silver;
+	font-size:10px;
+	-webkit-animation: moveFromBottom .3s ease;
+}	
+
+section#menu article a span #contentvideo{
+	background:url(../imagenes/fondovideo.png);
+	background-size: 200px 100px;
+	background-repeat: no-repeat;
+	width: 100%;
+	border-radius: 5px;
+	height: 120px;
+	display: block;
+}
+section#menu article:hover a span #contentvideo{
+	overflow: hidden;
+	font-size:0px;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	color: white;
+
+
+}
+section#menu article#contenedorvideo a div h2{
+	font-size: 25px;
+
+}
+section#menu article#contenedorvideo:hover a div h2{
+	font-size: 20px;
+	padding: -15px  !important;
+	margin: 0;
+}
+section#menu article#contenedorvideo a div h3{
+	font-size:  16px;
+}
+section#menu article#contenedorvideo:hover a div h3{
+	font-size:  10px;
+}
+
+
+/*
+====.. contenedores de video, registro,e inicio de sesion..=====
+*/
+
+section#video{
+	border-top: 1px solid black;
+	width: 100%;
+	height: auto;
+	display: block;
+	text-align: center;
+	background: #359B35;
+	box-shadow: inset 0 10px 22px rgba(0,0,0,0.8);	
+	z-index: 1;
+}
+section#video video{
+	width: 100%;
+	height: 655px;
+}
+
+
+
+
+
+
+
+
+
+section#sesion{
+	margin: 0;
+	width: 100%;
+	background: white;
+	height: 655px;
+/*	box-shadow: 0px 0px 150px  rgba(0,0,0,0.3) inset;
+*/	text-align: center;
+	z-index: -1;
+	padding: 310px 0 310px 0 ;
+	background: #fff url("../imagenes/tescohalcones.jpg") no-repeat right center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+		border-top: 1px solid rgba(0,0,0,0.8);
+	box-shadow: inset 0 10px 22px rgba(0,0,0,0.8);	
+}
+section#sesion p{
+	font-family: opensans, sans-serif, helvetica;
+	margin: 0 auto;
+	display: block;
+	width: 350px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 40px;
+}
+section#sesion form{
+	width: 720px;
+	height: auto;
+	padding: 0;
+	background: #359B35;
+	border: 5px solid #359B35;
+	margin: 0px auto;
+	border-radius: 5px;
+	text-align: left;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;	
+	box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.4);
+}
+section#sesion input{
+	display: inline-block;
+	margin: 0;
+	width: 300px;
+	height: 56px;
+	outline: none;
+	padding-left: 5px;
+	font-size: 24px;
+	border: none;
+	vertical-align: top;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section#sesion input:first-child{
+	border-radius: 5px 0px 0px 5px;
+}
+section#sesion input[type="submit"]{
+	width: 100px !important;
+	height: 56px !important;
+	border-radius: 0px 5px 5px 0px !important;
+	margin: 0;
+	text-align: center;
+	background: #359B35;
+	font-size: 20px !important;
+	background: #ffaf31 url("../imagenes/esquina-submit.jpg") no-repeat left center;
+	border: none;
+	color: #8e5600;
+	cursor: pointer;
+	font-weight: bold;
+	position: absolute;
+	text-transform: uppercase;	
+}
+
+section#registro{
+	margin: 0;
+	width: 100%;
+	height: 655px;
+	background: #3c4043;
+	box-shadow: inset 0 10px 22px rgba(0,0,0,0.6);	
+	z-index: 2;
+	padding: 50px 0;
+	color: white;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+}
+section#registro p{
+	font-family: opensans, sans-serif, helvetica;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 40px;
+
+
+}
+section#registro form{
+	max-width: 320px;
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+	border-radius: 5px;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0 auto;
+	padding: 50px 10px;
+	display: block;
+}
+section#registro input{
+	display: block;
+	font-size: 16px;
+	width: 300px;
+	height: 45px;
+	padding: 3px 15px;
+	border-radius: 3px;
+	outline: none;
+	margin: 10px 0;
+	border: none;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	trasition:all ease .3s;
+	-webkit-trasition:all ease .3s;
+}
+section#registro input:hover{
+	border: 2px solid #ffaf31;
+}
+section#registro input:focus{
+	border: 3px solid #359B35;
+	box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+	font-size: 30px;
+}
+section#registro input[type="submit"]{
+	width: 150px !important;
+	height: 35px !important;
+	border-radius: 1px !important;
+	font-size: 16px !important;
+	margin: 10px auto;
+	text-align: center;
+	background: #ffaf31;
+	border: none;
+	height: 25px;
+	/*border-bottom: 3px solid rgba(0,0,0,0.4);
+	border-right: 3px solid rgba(0,0,0,0.4);*/
+	box-shadow: 1px 0px 1px rgba(0,0,0,0.7),0px 1px 1px rgba(0,0,0,0.7),2px 1px 1px rgba(0,0,0,0.7),1px 2px 1px rgba(0,0,0,0.7),3px 2px 1px rgba(0,0,0,0.7),2px 3px 1px rgba(0,0,0,0.7),4px 3px 1px rgba(0,0,0,0.7),3px 4px 1px rgba(0,0,0,0.7),5px 4px 1px rgba(0,0,0,0.7),4px 5px 1px rgba(0,0,0,0.7),6px 5px 1px rgba(0,0,0,0.7);
+	color: #8e5600;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+section#registro input[type="submit"]:active{
+	margin: 13px 0px 10px 76px;
+	border: 3px solid transparent;
+	height: 32px !important;
+	padding: 0px 0px 3px 0px;
+/*	border-bottom: 1px solid rgba(0,0,0,0.4);
+	border-right: 1px solid rgba(0,0,0,0.4); 
+*/
+ box-shadow: 1px 1px 1px rgba(0,0,0,0.7),2px 2px 1px rgba(0,0,0,0.7),3px 2px 1px rgba(0,0,0,0.7),4px 3px 1px rgba(0,0,0,0.7);
+
+}
+
+
+
+/*
+=================iniciamos los media queries =======
+====================================================
+*/
+
+
+
+@media screen and (max-width: 900px){
+	section#video video{
+	width: 100%;
+	height: 655px;
+}
+
+}
+
+
+/*
+
+======= 
+Declaramos los keyframes para los
+efectos
+====
+
+----> moveFromLeftRotate
+----> moveFromBottom
+*/
+@-webkit-keyframes moveFromLeftRotate{
+    from {
+        -webkit-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -webkit-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-moz-keyframes moveFromLeftRotate{
+    from {
+        -moz-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -moz-transform: translateX(0%) rotate(0deg);
+    }
+}
+@-ms-keyframes moveFromLeftRotate{
+    from {
+        -ms-transform: translateX(-100%) rotate(-90deg);
+    }
+    to {
+        -ms-transform: translateX(0%) rotate(0deg);
+    }
+}
+
+/*
+=======================
+keyframe moveFromBottom
+=======================
+*/
+@-webkit-keyframes moveFromBottom {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0%);
+    }
+}
+@-moz-keyframes moveFromBottom {
+    from {
+        -moz-transform: translateY(100%);
+    }
+    to {
+        -moz-transform: translateY(0%);
+    }
+}
+@-ms-keyframes moveFromBottom {
+    from {
+        -ms-transform: translateY(100%);
+    }
+    to {
+        -ms-transform: translateY(0%);
+    }
+}

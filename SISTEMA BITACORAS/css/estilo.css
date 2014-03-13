@@ -1,0 +1,166 @@
+@font-face{
+	font-family:idealist;
+	src:url(../fonts/IdealistSansLight.ttf) format(truetype);
+}
+@font-face{
+	font-family:kankin;
+	src:url(../fonts/kankin.ttf) format(truetype);
+}
+@font-face{
+font-family: OpenSans-Light;
+src: url(../fonts/OpenSans-Light.ttf) format(truetype);
+}
+@font-face{
+font-family: kabel;
+src: url(../fonts/Kabel.otf) format(opentype);
+}
+body{
+	background: #e5e5e5;
+	margin: 0;
+}
+header{
+	width: 100%;
+	height: 200px;
+	background: #444;
+	display: inline-block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: -1;
+	transition: height linear .3s;
+	-webkit-transition: height linear .3s;
+}
+h1{
+	/*background: #ffaf31;
+	margin: 0; 
+	text-align: center;
+	width: 20%;
+	box-shadow: 7px 7px 0px gray, 14px 15px 0px silver;
+	display: block;
+   	box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	font-family: OpenSans-Light ,sans-serif;
+	font-size:50px;
+	color: #8e5600;
+	padding: 150px 0px 0px 0px;
+	height: 400px;
+	font-weight: 900;
+	text-shadow: 0 0 3px rgba(0,0,0,0.8) inset;
+	transition: height linear .3s;
+	-webkit-transition: height linear .3s;*/
+	padding: 20px 0 50px ;
+   	margin: -15px 0 0 10px;
+   	height: 400px;
+   	width: 240px;
+   	font-size: 50px;
+   	background: #ff0030;
+	color: #791B1B;
+	text-align: center;
+   	font-weight: bold;
+   	font-family: OpenSans-Light ,sans-serif;
+   	line-height: 1.3em;
+   	border: 2px dashed #fff;
+   	border-radius: 0 0 2px 2px;
+  	box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	font-weight: normal;
+}
+h1 strong{
+	margin: 45px 0px 0px ;
+	padding: 50px 0;
+	text-transform: uppercase;
+	font-family: OpenSans-Light , sans-serif;
+}
+div#logo{
+	background: url(../img/tescohalcones.png);
+	top: 10px;
+	right: 20px;
+	display: inline-block;
+}
+section{
+	margin: 100px auto 0px;
+	width: 70%;
+	background: none;
+	text-align: center;
+	padding: -50px 0 200px 0 ;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	z-index: 1;
+}
+section form{
+	margin:0;
+/*	background:rgb(53,155,53);
+*/	
+	background: transparent;
+	width: 70%;
+	margin: 0 auto;
+	padding: 50px 0px;
+	box-shadow: 0px 0px 100px -20px rgba(0,0,0,0.4) ;
+	border-radius: 1px 0 0 0;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+}
+/*section form input[type="text"]{
+	border: none;
+	height: 40px;
+	width: 400px;
+	margin: 5px;
+	padding: 3px 10px 3px 15px;
+	color: gray;
+	border-radius: 4px;
+	outline: none;
+	font-family: idealist, sans-serif;	
+	font-size: 20px;
+	transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+}*/
+.mac1{
+	margin: 0;
+	width: 400px;
+	height: 56px;
+	outline: none;
+	padding-left: 5px;
+	font-size: 27px;
+	border: none;
+	border-radius: 60px;
+	vertical-align: top;
+	text-align: center;
+	margin-bottom: 8px;
+	moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: gray;
+	font-family: OpenSans-Light, sans-serif;
+	box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.7);
+}
+.mac1:focus{
+	font-style: italic;
+	outline: none;
+	box-shadow: 
+	    inset 0 2px 0 rgba(0,0,0,.2), 
+	    0 0 3px rgba(0,0,0,0.1),
+	    0 0 2px 1px #51CBEE;
+	    border: 1px solid #51CBEE;
+}
+
+section form input[type="text"]:focus{
+		font-size: 25px;
+}
+section form input[type="submit"]{
+	width: 150px;
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 0;
+	background: #ffaf31;
+	color: #8e5600;
+	border: none;
+	border-bottom:1px solid #8e5600;
+	outline: 0;
+	box-shadow: 2px 2px 0px #141414, 3px 3px 0px #141414,4px 4px 0px #141414, 5px 5px 0px #141414;
+}
+section form input[type="submit"]:active{
+	margin: 3px auto 5px;
+	box-shadow: 2px 2px 0px gray, 3px 3px 0px silver;
+}
